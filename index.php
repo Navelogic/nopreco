@@ -1,3 +1,4 @@
 <?php
-include '';
+include './VIEW/header.html';
+include './VIEW/formCadastro.html';
 ?>

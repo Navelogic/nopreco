@@ -6,17 +6,18 @@ CREATE TABLE users (
   nome VARCHAR(500) NOT NULL,
   email VARCHAR(500) NOT NULL,
   senha VARCHAR(500) NOT NULL,
-  adicao INT NOT NULL DEFAULT 0,
-  verficado INT NOT NULL DEFAULT 0
+  cpf VARCHAR(500) NOT NULL,
+  adicao INT DEFAULT 0,
+  verficado INT DEFAULT 0
 );
 
 CREATE TABLE mercados (
   id_mercado INT PRIMARY KEY AUTO_INCREMENT,
   nome VARCHAR(500) NOT NULL,
-  classificacao INT NOT NULL DEFAULT 0,
   localizacao VARCHAR(500) NOT NULL,
-  quantprodutos INT NOT NULL DEFAULT 0,
-  verficado INT NOT NULL DEFAULT 0
+  quantprodutos INT DEFAULT 0,
+  classificacao INT DEFAULT 0,
+  verficado INT DEFAULT 0
 );
 
 CREATE TABLE produtos (
