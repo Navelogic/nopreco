@@ -8,16 +8,14 @@ $cpf = $_POST["cpf"];
 $senha = $_POST["senha"];
 $senha = md5($senha);
 
-$SQL = "INSERT INTO users VALUES (null,'$nome','$email','$senha','$cpf')";
-echo $SQL;
-exit;
-if(mysqli_query($con, $SQL)){
+$sql = "INSERT INTO users VALUES (null,'$nome','$email','$senha','$cpf','','')";
 
-  $msg = $nome . ', seu cadastro foi feito com sucesso!';
+if(mysqli_query($con, $sql)){
+  $msg = 'seu cadastro foi feito com sucesso!';
 } else{
-  $msg = $nome . ', seu cadastro não foi feito. Tente novamente';
+  $msg = 'seu cadastro não foi feito. Tente novamente';
 }
-
 mysqli_close($con);
-echo "<sript>alert('". $msg ."'); location.href='../index.php'</sript>";
+
+echo "<script>alert ('" . $msg . "'); location.href='../index.php';</script>";
 ?>
