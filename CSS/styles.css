@@ -1,0 +1,13 @@
+
+.fonte{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2rem;
+}
+#logoImagem{
+  width: 4rem;
+}
+
+.heroImagem{
+background-image: url(../IMG/franki-chamaki-ivfp_yxZuYQ-unsplash.jpg);
+};
+
