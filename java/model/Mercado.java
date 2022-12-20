@@ -1,3 +1,4 @@
+package model;
 public class Mercado {
   private int id;
   private String nomeMercado;
