@@ -1,0 +1,1 @@
+DROP DATABASE nopreco_db;
