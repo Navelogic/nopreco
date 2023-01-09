@@ -14,6 +14,7 @@ CREATE TABLE users (
 CREATE TABLE mercados (
   id_mercado INT PRIMARY KEY AUTO_INCREMENT,
   nome VARCHAR(500) NOT NULL,
+  logo VARCHAR(500) NOT NULL,
   localizacao VARCHAR(500) NOT NULL,
   quantprodutos INT DEFAULT 0,
   classificacao INT DEFAULT 0,
@@ -23,6 +24,7 @@ CREATE TABLE mercados (
 CREATE TABLE produtos (
   id_produto INT PRIMARY KEY AUTO_INCREMENT,
   nome VARCHAR(500) NOT NULL,
+  imagem VARCHAR(500) NOT NULL,
   preco DECIMAL(5,2) NOT NULL,
   marca VARCHAR(500) NOT NULL,
   id_mercado INT NOT NULL,
